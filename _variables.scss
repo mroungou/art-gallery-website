@@ -1,0 +1,31 @@
+@mixin button {
+    .btn {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        font-weight: 800;
+        font-size: 1.25rem;
+        letter-spacing: 3.64px;
+        width: 75%;
+        margin-top: 2rem;
+        .btn-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding: 1.5rem;
+            height: 72px;
+            text-transform: uppercase;
+            background: rgba(21, 21, 21, 1);
+            color: rgba(255, 255, 255, 1);
+            font-family: "Big Shoulders Display", sans-serif;
+        }
+        .arrow {
+            // padding: 1.5rem;
+            background-color: rgba(213, 150, 108, 1);
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

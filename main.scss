@@ -1,3 +1,160 @@
+@use 'fonts';
+@use 'variables';
+
 body {
     margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.desktop, .tablet {
+    display: none;
+}
+
+h1, h2, h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+}
+
+.header {
+    .text {
+        padding: 1.5rem 1rem;
+    }
+    h1 {
+        margin: 0;
+        font-weight: 900;
+        font-size: 3.75rem;
+        line-height: 100%;
+        .new-line {
+            display: block;
+        }
+    }
+    p {
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 150%;
+    }
+    @include variables.button;
+}
+
+.ad {
+    padding: 5rem 1rem;
+
+    h2 {
+        font-weight: 900;
+        font-size: 3.125rem;
+        line-height: 100%;
+        margin: 1rem 0;
+        color: rgba(21, 21, 21, 1);
+        .new-line {
+            display: block;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 150%;
+        font-size: 1.125rem;
+        color: rgba(68, 68, 68, 1);
+    }
+
+    .image {
+        padding: .5rem 0 0;
+    }
+    img {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .inspired {
+        padding: 2rem 1.5rem;
+        margin-top: .5rem;
+        background-color: rgba(21, 21, 21, 1);
+        h2, p {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.footer {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(21, 21, 21, 1);
+    padding: 2rem;
+    margin-top: 4rem;
+    h3 {
+        .new-line {
+            display: block;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 150%;
+    }
+
+    .socials {
+        .icons {
+            padding-right: 1.125rem;
+        }
+    }
+}
+
+body.location {
+    .header {
+        display: grid;
+        position: relative;
+        .location-image img{
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .btn {
+            margin-top: 0;
+            align-items: normal;
+        }
+
+        .location-image, .btn {
+            grid-area: 1/2;
+        }
+    }
+
+    .footer {
+        margin-top: 0;
+        background-color: rgba(213, 150, 108, 1);
+        color: rgba(21, 21, 21, 1);
+    }
+}
+
+.about-location {
+    h1 {
+        margin: 0;
+        font-weight: 900;
+        font-size: 3.125rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 150%;
+        padding-top: 1rem;
+    }
+
+    .address {
+        .city, 
+        .postal-code, 
+        .country {
+            display: block;
+            font-weight: 300;
+            font-size: 1.125rem;
+        }
+        .street {
+            color: rgba(213, 150, 108, 1);
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: "Big Shoulders Display", sans-serif;
+            font-weight: 900;
+        }
+    }
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(21, 21, 21, 1);
+    padding: 3rem 1rem;
 }

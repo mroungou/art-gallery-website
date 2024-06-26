@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <title>Art gallery website</title>
 </head>
-<body>
-
-  Back to Home
-
-  Our location
-
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
-
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+<body class="location">
+<section class="header">
+  <div class="location-image">
+    <img src="./assets/mobile/image-map@2x.png" alt="">
+  </div>
+  <div class="btn">
+    <div class="arrow"><img src="./assets/icon-arrow-left.svg" alt=""></div>
+    <div class="btn-text">Back to Home</div>
+  </div>
+</section>
+<section class="about-location">
+    <h1>Our location</h1>
+    <div class="address">
+      <h2><span class="street">99 King Street</span></h2>
+      <span class="city">Newport</span>
+      <span class="postal-code">RI 02840</span>
+      <span class="country">United States of America</span>
+    </div>
+    <p>
+      Our newly opened gallery is located near the Edward King House on 99 King
+      Street, the Modern Art Gallery is free to all visitors and open seven days
+      a week from 8am to 9pm.
+    </p>
+</section>
+<footer class="footer">
+  <h3>Modern <span class="new-line">Art Gallery</span></h3>
+  <p>
+    The Modern Art Gallery is free to all visitors and open seven days a week
+    from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+  </p>
+  <div class="socials">
+    <img src="./assets/icon-facebook.svg" alt="Facebook" class="icons">
+    <img src="./assets/icon-instagram.svg" alt="Instagram" class="icons">
+    <img src="./assets/icon-twitter.svg" alt="Twitter" class="icons">
+  </div>
+</footer>
 
 </body>
 </html>
