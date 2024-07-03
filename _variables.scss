@@ -1,7 +1,9 @@
 @mixin button {
     .btn {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
         align-items: center;
         font-weight: 800;
         font-size: 1.25rem;
